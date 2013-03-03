@@ -11,6 +11,15 @@ get '/today' do
   redirect today()
 end
 
+get '/' do
+  puts <<-EOF
+  <html>
+  There's nothing here, other than an app. That you shouldn't be using.<br>
+  <a href='/today'>Today?</a><br><br>
+  See <a href='https://github.com/barn/todayer'>https://github.com/barn/todayer</a> for details.
+  </html>
+  EOF
+end
 
 def today
   base_url = 'http://www.bbc.co.uk/programmes/b006qj9z/episodes/player'
