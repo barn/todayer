@@ -12,7 +12,7 @@ get '/today' do
 end
 
 get '/' do
-  puts <<-EOF
+  <<-EOF
   <html>
   There's nothing here, other than an app. That you shouldn't be using.<br>
   <a href='/today'>Today?</a><br><br>
